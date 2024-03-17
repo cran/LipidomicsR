@@ -234,9 +234,9 @@ absolute.calculator <- function(data,absolute.dataset,qc=1:5){
   sep_data<-sepclass(data,'lipid')
   sep_index<-sepclass(absolute.dataset,'lipid')
   cnx<-data.frame()
-  for (lipid in sep_index$`lipid type`){
-    cdt<-subset(data, subset = sep_data$`lipid type`==lipid)
-    cix<-sep_index[sep_index$`lipid type`==lipid, 'mol.peak_intensity']
+  for (lipid in sep_index$lipid_type){
+    cdt<-subset(data, subset = sep_data$`lipid_type`==lipid)
+    cix<-sep_index[sep_index$`lipid_type`==lipid, 'mol.peak_intensity']
     cnx2 <- cdt*cix
     cnx<- rbind(cnx,cnx2)
   }

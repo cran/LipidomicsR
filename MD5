@@ -1,8 +1,8 @@
-8d5acaca05ebf355e3ab1aeb52395860 *DESCRIPTION
+eedcf9fb76822dfaae2e53a57a0cc04d *DESCRIPTION
 0304adacb406738afed5d412b443de90 *LICENSE
 8e4bac3d1ca3f75ac2a625071545c874 *NAMESPACE
 6cfd43a75cd9ba6614f2e4fbac463151 *R/abundance.R
-7cd05b7652b5d3d6348698e0e44a16aa *R/data_cleaner.R
+ff09ea5bdde57992e0f1944387dde954 *R/data_cleaner.R
 8eee98bcc715f8c2850b2de51531b87c *R/delRep.R
 b40dcac512ffeefef2db56545582231a *R/extract.R
 0b616f3802db3902b7a010945391edb6 *R/global_env.R
@@ -11,7 +11,7 @@ ff060a5a5e693b9217b162a4eedf88fd *R/lineplot.R
 2c6ba5f6422c85b86f53d5c28acead74 *R/plotRadar.R
 e52ef7fa95cfc9511f8a4592fd04886c *R/qc.R
 e1788f5e9e4310757a7917f1ef37b624 *R/replicate_delete.R
-bbdc19e3581f126859ec9a182c7440df *R/volcano_master.R
+2f029eefb4063e2599412a6d1f21cb63 *R/volcano_master.R
 962ee56461b97371f58563b4d3ebb42f *man/FC_P.Rd
 9ac34d4afc87db2a0b05f9689126b5b7 *man/QCplot.Rd
 edff96ee5c1933b70bda2d675dcc3d5f *man/absolute.calculator.Rd

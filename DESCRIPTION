@@ -2,7 +2,7 @@ Package: LipidomicsR
 Type: Package
 Title: Elegant Tools for Processing and Visualization of Lipidomics
         Data
-Version: 0.1.0
+Version: 0.1.6
 Authors@R: c(person(given = "Mingshi", family = "Li", email = "mingshi.21@intl.zju.edu.cn", role = "aut"),
             person(given = "Hengyu", family = "Zhu", email = "hengyu.21@intl.zju.edu.cn", role = c("aut", "cre")))
 Maintainer: Hengyu Zhu <hengyu.21@intl.zju.edu.cn>
@@ -15,8 +15,8 @@ Imports: broom, car, ggiraph, rcompanion, tidyr, cowplot, dplyr, fmsb,
 Depends: tidyverse
 RoxygenNote: 7.3.0
 NeedsCompilation: no
-Packaged: 2024-03-14 14:53:00 UTC; zhy11
+Packaged: 2024-03-16 09:29:11 UTC; zhy11
 Author: Mingshi Li [aut],
   Hengyu Zhu [aut, cre]
 Repository: CRAN
-Date/Publication: 2024-03-14 20:40:05 UTC
+Date/Publication: 2024-03-17 00:00:02 UTC

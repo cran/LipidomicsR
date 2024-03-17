@@ -120,8 +120,8 @@ volcano <- function(data, x.scale,y.scale, interact=FALSE, FC.threshold=2, P.thr
           plot.background = element_rect(fill = "transparent",colour = NA),
           panel.grid.minor = element_blank())
 
-  voldown<-subset(volc.data,volc.data$Change=='Down')
-  volup<-subset(volc.data,volc.data$Change=='Up')
+  voldown<-subset(volc.data,volc.data$Change== change.label[2])
+  volup<-subset(volc.data,volc.data$Change==change.label[3])
 
   if (annotation == TRUE) {
     vs<-vs+ geom_text_repel(data=volup,aes(volup$Log2FC,volup$`-log10Pvalue`,
