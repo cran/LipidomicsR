@@ -7,7 +7,8 @@
 heatmap(
   data,
   group,
-  cluster = TRUE,
+  cluster_row = TRUE,
+  cluster_col = TRUE,
   sel.group = "default",
   constract = 8.5,
   type = "lipid",
@@ -18,6 +19,7 @@ heatmap(
   cellheight = 15,
   gaps_row = c(0),
   gaps_col = c(0),
+  subtype = FALSE,
   labels_row = c("default"),
   labels_col = c("default"),
   title = "",
@@ -30,7 +32,7 @@ heatmap(
   cutree_rows = 1,
   cutree_cols = 1,
   rtitle = "group",
-  ctitle = "",
+  ctitle = " ",
   fontsize_row = 12,
   fontsize_col = 12,
   fontsize = 8
@@ -45,8 +47,11 @@ The class of column name and row name should be "character". The class of values
 
 \item{group}{A vector defining which group the replicates belong to.}
 
-\item{cluster}{A boolean variable controlling whether to perfrom clustering to
-column variables (lipid abundance) or not. The default value is T.}
+\item{cluster_row}{A boolean variable controlling whether to perfrom clustering to
+row variables (lipid abundance) or not. The default value is TRUE.}
+
+\item{cluster_col}{A boolean variable controlling whether to perfrom clustering to
+column variables (lipid abundance) or not. The default value is TRUE.}
 
 \item{sel.group}{A vector containing the group you want to show in the heatmap.
 The input can be like c("WT","KO"). Default value is "default".}
@@ -79,6 +84,9 @@ You can set type="lipid", sel.type=c("PA","PC","PE")}
 
 Notice: gaps_row and gaps_col are only useful when cluster=FALSE.}
 
+\item{subtype}{A logic value to determine for a lipid like "PC(O-14:0/16:1)", "lipid_type" should be
+"PC" (subtype=FALSE) or "PC(O)" (subtype=TRUE). Default value is FALSE.}
+
 \item{labels_row}{A vector contains the labels of each row of the heatmap.
 Default value is row names of dataframe input. It can be input like ("PE(20:1/20:1)","PS(16:0/18:1)","","","","LPA(18:0)")}
 
@@ -108,7 +116,7 @@ clustering results. Default value is TRUE.}
 
 \item{rtitle}{Row title of the heatmap. Default value is "group".}
 
-\item{ctitle}{Column title of the heatmap. Default value is "".}
+\item{ctitle}{Column title of the heatmap. Default value is " ".}
 
 \item{fontsize_row}{Fontsize of row labels. Default value is 12.}
 
